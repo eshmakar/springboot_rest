@@ -36,6 +36,15 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- чтобы автоматический перезапускать проект, при внесении каких-либо изменении -->
+<!--		для этого надо в включить пункт в Settings -> Build, Execution, Deployment -> Compiler -> Build Project Automatically-->
+<!--		еще нажать на Ctrl+Shift+A ввести Registry... и там ввести compiler.automake.allow.when.app.runnning-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+		</dependency>
+
 	</dependencies>
 
 	<build>
